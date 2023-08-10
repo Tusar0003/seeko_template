@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+	<html lang="en-US">
+	
+<!-- Mirrored from seeko.seventhqueen.com/dating/wp-login.php?action=lostpassword by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 06 Jun 2023 10:32:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Lost Password &lsaquo; Seeko Dating &#8212; WordPress</title>
+	<meta name='robots' content='noindex, follow' />
+<link rel='stylesheet' id='dashicons-css' href='wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='buttons-css' href='wp-includes/css/buttons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='forms-css' href='wp-admin/css/forms.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='l10n-css' href='wp-admin/css/l10n.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='login-css' href='wp-admin/css/login.min.css' type='text/css' media='all' />
+		<div id="fb-root"></div>
+		<style type="text/css" media="screen">
+	    .svq-facebook-connect.btn {
+	      display:block;
+	      background-color: #4469B0;
+	      color: #fff;
+	      border-radius: 2px;
+	      font-size: 13px;
+	      font-weight: normal;
+	      margin: 3px 0;
+	      min-width: 80px;
+	      transition: all 0.4s ease-in-out 0s;
+	      cursor: pointer;
+	      line-height: 1.42857;
+	      padding: 6px 12px;
+	      text-align: center;
+	      text-decoration: none;
+	      vertical-align: middle;
+	      white-space: nowrap;
+	    }
+		</style>	<meta name='referrer' content='strict-origin-when-cross-origin' />
+		<meta name="viewport" content="width=device-width" />
+	<link rel="icon" href="wp-content/uploads/sites/2/2019/01/cropped-seeko-favicon%402x-32x32.png" sizes="32x32" />
+<link rel="icon" href="wp-content/uploads/sites/2/2019/01/cropped-seeko-favicon%402x-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="wp-content/uploads/sites/2/2019/01/cropped-seeko-favicon%402x-180x180.png" />
+<meta name="msapplication-TileImage" content="https://seeko.seventhqueen.com/dating/wp-content/uploads/sites/2/2019/01/cropped-seeko-favicon@2x-270x270.png" />
+	</head>
+	<body class="login no-js login-action-lostpassword wp-core-ui  locale-en-us">
+	<script type="text/javascript">
+		document.body.className = document.body.className.replace('no-js','js');
+	</script>
+		<div id="login">
+		<h1><a href="index.html">Seeko Dating</a></h1>
+	<p class="message">Please enter your username or email address. You will receive an email message with instructions on how to reset your password.</p>
+
+		<form name="lostpasswordform" id="lostpasswordform" action="https://seeko.seventhqueen.com/wp-login.php?action=lostpassword" method="post">
+			<p>
+				<label for="user_login">Username or Email Address</label>
+				<input type="text" name="user_login" id="user_login" class="input" value="" size="20" autocapitalize="off" autocomplete="username" />
+			</p>
+						<input type="hidden" name="redirect_to" value="" />
+			<p class="submit">
+				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Get New Password" />
+			</p>
+		</form>
+
+		<p id="nav">
+			<a href="wp-login.html">Log in</a>
+			 | <a rel="nofollow" href="register/index.html">Register</a>		</p>
+				<p id="backtoblog">
+			<a href="index.html">&larr; Go to Seeko Dating</a>		</p>
+		<div class="privacy-policy-page-link"><a class="privacy-policy-link" href="privacy-policy/index.html" rel="privacy-policy">Privacy Policy</a></div>	</div>
+					<script type="text/javascript">
+		try{document.getElementById('user_login').focus();}catch(e){}
+		if(typeof wpOnload==='function')wpOnload();
+		</script>
+		<script   type='text/javascript' src='wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script   type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+		<script>
+			// Additional JS functions here
+			window.fbAsyncInit = function () {
+				FB.init({
+					appId: '132565730272019', // App ID
+					version: 'v3.1',
+					status: true, // check login status
+					cookie: true, // enable cookies to allow the server to access the session
+					xfbml: true  // parse XFBML
+					//oauth: true
+				});
+
+				// Additional init code here
+				jQuery('body').trigger('svq_fb.init');
+
+			};
+
+			// Load the SDK asynchronously
+			(function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "../../connect.facebook.net/en_US/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+
+			var fbAjaxUrl = 'wp-login.html';
+
+			window.addEventListener('DOMContentLoaded', function () {
+				jQuery(document).ready(function () {
+
+					jQuery('.svq-facebook-connect').on('click', function () {
+
+						/* fix iOS Chrome */
+						if (navigator.userAgent.match('CriOS')) {
+							window.open('https://www.facebook.com/dialog/oauth?client_id=132565730272019' +
+                            + '&redirect_uri=https://seeko.seventhqueen.com/dating/&scope=email&response_type=token', '', null);
+						} else {
+							FB.login(function (FB_response) {
+									if (FB_response.authResponse) {
+										fb_intialize(FB_response, '');
+									}
+								},
+								{
+									scope: 'email',
+									auth_type: 'rerequest',
+									return_scopes: true
+								});
+						}
+					});
+
+					jQuery("body").on("svq_fb.init", function () {
+						var accToken = jQuery.getUrlVar('#access_token');
+						if (accToken) {
+							var fbArr = {scopes: "email"};
+							fb_intialize(fbArr, accToken);
+						}
+					});
+
+				});
+
+				jQuery.extend({
+					getUrlVars: function () {
+						var vars = [], hash;
+						var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+						for (var i = 0; i < hashes.length; i++) {
+							hash = hashes[i].split('=');
+							vars.push(hash[0]);
+							vars[hash[0]] = hash[1];
+						}
+						return vars;
+					},
+					getUrlVar: function (name) {
+						return jQuery.getUrlVars()[name];
+					}
+				});
+
+			});
+
+			function fb_intialize(FB_response, token) {
+				FB.api('/me', 'GET', {
+						fields: 'id,email,name',
+						access_token: token
+					},
+					function (FB_userdata) {
+						jQuery.ajax({
+							type: 'POST',
+							url: fbAjaxUrl,
+							data: {"action": "fb_intialize", "FB_userdata": FB_userdata, "FB_response": FB_response},
+							success: function (user) {
+								if (user.error) {
+									alert(user.error);
+								}
+								else if (user.loggedin) {
+									jQuery('.svq-login-result').html(user.message);
+
+									if (window.location.href.indexOf("wp-login.html") > -1) {
+										window.location = user.url;
+									} else if (user.redirectType == 'reload') {
+										window.location.reload();
+									} else {
+										window.location = user.url;
+									}
+
+								}
+							}
+						});
+					}
+				);
+			}
+
+		</script>
+			<div class="clear"></div>
+	</body>
+	
+<!-- Mirrored from seeko.seventhqueen.com/dating/wp-login.php?action=lostpassword by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 06 Jun 2023 10:32:01 GMT -->
+</html>
+	
